@@ -62,3 +62,10 @@
   .card img {
     width: 100%;
   }
+  .iframe-wrapper {
+    min-height: 600px;
+}
+body {
+  overflow-y: scroll;
+  height: 100%;
+}
