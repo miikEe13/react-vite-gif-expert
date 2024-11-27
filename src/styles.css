@@ -1,6 +1,5 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
   }
   
   body {
@@ -68,4 +67,5 @@
 body {
   overflow-y: scroll;
   height: 100%;
+  background: #0d6efd;
 }
