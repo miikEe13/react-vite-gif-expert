@@ -62,10 +62,14 @@
     width: 100%;
   }
   .iframe-wrapper {
-    min-height: 600px;
+    height: 100%;
 }
 body {
   overflow-y: scroll;
   height: 100%;
-  background: #0d6efd;
+  background: #160f41;
+}
+
+h3 {
+  color: #fff;
 }

@@ -2,7 +2,7 @@ import { GifItem } from './GifItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { useEffect } from 'react';
 
-export const GifGrid = ({ category }) => {
+export const GifGrid = ({ category, onRemoveCategory }) => {
     const { images, isLoading } = useFetchGifs(category);
 
     // useEffect(() => {
@@ -27,6 +27,7 @@ export const GifGrid = ({ category }) => {
     return (
         <>
             <div className='wraper-cards'>
+                    <button onClick={onRemoveCategory}>clean</button>
                 <div>
                     <h3>{category}</h3>
                     {isLoading && (<h2>Cargando...</h2>)}

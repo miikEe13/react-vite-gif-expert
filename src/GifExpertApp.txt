@@ -30,7 +30,7 @@ export const GifExpertApp = () => {
         if (window.parent) {
             const height = containerRef.current.scrollHeight; // Calculate the total height
             console.log('Sending height to parent:', height);
-            window.parent.postMessage({ type: 'iframeHeight', height }, 'http://node.ahcom.local:3000'); // Change '*' to the parent domain
+            window.parent.postMessage({ type: 'iframeHeight', height }, '*'); // Change '*' to the parent domain
         }
     };
 
